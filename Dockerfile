@@ -5,7 +5,7 @@ FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-############ Install dependencies first → better caching
+########## Install dependencies first → better caching
 COPY package*.json ./
 RUN npm ci --frozen-lockfile
 
