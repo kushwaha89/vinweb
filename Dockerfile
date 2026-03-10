@@ -26,7 +26,7 @@ RUN rm -rf /usr/share/nginx/html/*
 # Copy built artifacts from builder stage
 COPY --from=builder --chown=nginx:nginx /app/dist /usr/share/nginx/html
 
-## Optional: custom nginx config (recommended for SPA routing)
+### Optional: custom nginx config (recommended for SPA routing)
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose port
