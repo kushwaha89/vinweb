@@ -66,7 +66,6 @@ export default function Navbar() {
 
 
               {/* Products Dropdown */}
-              {/* Products Dropdown */}
 <div
   className="relative"
   onMouseEnter={() => setProductOpen(true)}
@@ -111,7 +110,7 @@ export default function Navbar() {
     </div>
 
     {/* Server Hardware */}
-    <div className="relative group">
+        <div className="relative group">
       <div className="px-4 py-2 hover:bg-blue-50 hover:text-blue-600 cursor-pointer flex justify-between items-center transition">
         Server Hardware <span className="text-gray-400">›</span>
       </div>
@@ -122,15 +121,22 @@ export default function Navbar() {
           transition-all duration-300 transform -translate-y-1 group-hover:translate-y-0"
       >
         <Link
-          to="/products/vnetmox"
+          to="/products/vnetwall"
           className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600 transition"
         >
           Rack Servers
         </Link>
+        <Link
+      to="/products/baremetal-hosting"
+      className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600 transition"
+    >
+      Baremetal Hosting
+    </Link>
+
       </div>
     </div>
-  </div>
-</div>
+    </div>
+    </div>
 
           <Link to="/partners" className="hover:text-blue-600">Partners</Link>
           <Link to="/about" className="hover:text-blue-600">About Us</Link>
