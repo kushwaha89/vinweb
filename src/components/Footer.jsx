@@ -25,7 +25,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
           <p className="text-sm text-gray-300">📞 +91 1294159609</p>
-          <p className="text-sm text-gray-300 mt-2">📍 297 Sector 30, Faridabad, Haryana</p>
+          <p className="text-sm text-gray-300 mt-2">📍 157, Deputyganj, Nagram - Nilmatha Rd, near DN Motors, near Railway crossing, Roberts Lines, Lucknow, Uttar Pradesh 226002</p>
           <p className="text-sm text-gray-300 mt-2">✉ support@vincentio.in</p>
         </div>
 

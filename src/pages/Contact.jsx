@@ -18,7 +18,7 @@ export default function Contact() {
             Feel free to contact us for any cloud, infrastructure or IT services.
           </p>
 
-          <p className="mb-3"><strong>📍 Address:</strong> 297 Sector 30, Faridabad, Haryana 121003</p>
+          <p className="mb-3"><strong>📍 Address:</strong>157, Deputyganj, Nagram - Nilmatha Rd, near DN Motors, near Railway crossing, Roberts Lines, Lucknow, Uttar Pradesh 226002</p>
           <p className="mb-3"><strong>📞 Phone:</strong> +91 1294159609</p>
           <p className="mb-3"><strong>✉ Email:</strong> support@vincentio.in</p>
         </div>
