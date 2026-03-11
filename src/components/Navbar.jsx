@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-
 export default function Navbar() {
   const [serviceOpen, setServiceOpen] = useState(false);
   const [productOpen, setProductOpen] = useState(false);
@@ -8,11 +7,14 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full bg-white shadow z-50">
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-        
-        <Link to="/" className="text-2xl font-bold text-blue-700">
-          Vincentio
-        </Link>
-
+      
+  <Link to="/">
+  <img 
+    src="/images/vincentio.jpg"
+    alt="Vincentio Tech Solutions"
+    className="h-20 w-auto"
+  />
+</Link>
         <nav className="hidden md:flex gap-8 text-gray-700 font-medium items-center">
 
           <Link to="/" className="hover:text-blue-600">Home</Link>
