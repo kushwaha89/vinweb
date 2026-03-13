@@ -21,7 +21,8 @@ function BaremetalHosting() {
 
 body{
   margin:0;
-  font-family:Arial, Helvetica, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
+background:white;
 }
 
 .hero{
@@ -89,23 +90,44 @@ body{
 }
 
 .choose{
-  text-align:center;
-  padding:100px 20px;
-  background:#f5f5f5;
+background:white;
+padding:80px 20px;
+text-align:center;
+width:100%;
+max-width:1500px;
+margin:auto;
+}
+
+ .choose h1{
+font-size:42px;
+font-weight:400;
+text-align:center;
+width:100%;
+margin:0 auto 40px;
+line-height:1.2;
+white-space: nowrap;
 }
 
 .tabs{
   margin-top:30px;
+  margin-bottom:20px;
 }
 
 .tabs button{
   margin:10px;
-  padding:12px 22px;
-  border-radius:20px;
+  padding:14px 28px;
+  border-radius:30px;
   border:none;
   cursor:pointer;
   background:#e5e5e5;
   font-weight:600;
+  font-size:16px;
+}
+  .choose p{
+  max-width:700px;
+  margin:20px auto;
+  color:#555;
+  line-height:1.6;
 }
 
 .active{
@@ -138,19 +160,25 @@ body{
 }
 
 .pricing{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:30px;
-  padding:80px;
-  background:#f5f5f5;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+background:white;
+border:1px solid #e5e5e5;
+border-radius:6px;
+overflow:hidden;
+max-width:1200px;
+margin:auto;
 }
 
 .card{
-  background:white;
-  padding:30px;
-  border-radius:10px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+padding:30px 40px;
+border:1px solid #e5e5e5;
 }
+
+  .card:last-child{
+  border-right:none;
+}
+  
 
 .tag{
   background:#dff5ee;
@@ -182,15 +210,22 @@ body{
 }
 
 .focus{
-background:#f5f5f5;
-padding:120px 80px;
+background:#ffffff;
+padding:80px 0;
 text-align:center;
+width:100%;
+position:relative;
+z-index:2;
 }
 
 .focus h1{
-font-size:48px;
-margin-bottom:70px;
+font-size:46px;
+font-weight:500;
+margin-bottom:80px;
+text-align:center;
+white-space:nowrap;
 }
+
 
 .focus-grid{
 display:grid;
@@ -198,6 +233,7 @@ grid-template-columns:repeat(3,1fr);
 gap:60px;
 max-width:1200px;
 margin:auto;
+padding:0 20px;
 }
 
 .focus-card{
@@ -205,15 +241,16 @@ text-align:left;
 }
 
 .icon-box{
-width:40px;
-height:40px;
-background:#b6ff00;
-border-radius:10px;
+width:46px;
+height:46px;
+background:#c6ff00;
+border-radius:12px;
 display:flex;
 align-items:center;
 justify-content:center;
 margin-bottom:20px;
-font-size:20px;
+font-size:22px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
 .focus-card h3{
@@ -227,7 +264,7 @@ line-height:1.6;
 }
 
 .performance{
-padding:120px 20px;
+padding:60px 20px;
 text-align:center;
 }
 
@@ -236,8 +273,8 @@ font-size:46px;
 }
 
 .testimonial-section{
-padding:120px 80px;
-background:#f5f5f5;
+padding:70px 80px;
+background:white;
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -291,18 +328,19 @@ cursor:pointer;
 .dot.active{
 background:#b6ff00;
 }
+
 .world-section{
 background:linear-gradient(90deg,#022c2c,#2e7d32);
 color:white;
-padding:120px 80px;
+padding:80px 80px;
 text-align:center;
 position:relative;
 overflow:hidden;
 }
 
-.world-section h1{
-font-size:48px;
-margin-bottom:60px;
+.world-map img{
+width:100%;
+opacity:0.25;
 }
 
 .world-map{
@@ -343,23 +381,24 @@ max-width:500px;
 text-align:left;
 margin-top:40px;
 }
+
 .why-section{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:100px 80px;
-background:#f5f5f5;
-gap:60px;
+ display:flex; 
+ align-items:center;
+  justify-content:space-between;
+   padding:70px 80px; 
+   background:#f5f5f5; 
+   gap:60px;
+    }
+
+.why-left{ 
+flex:1; 
 }
 
-.why-left{
-flex:1;
-}
-
-.why-left h1{
-font-size:48px;
+.why-left h1{ 
+font-size:48px; 
 margin-bottom:30px;
-}
+ }
 
 .why-left p{
 font-size:18px;
@@ -388,7 +427,18 @@ margin-top:40px;
 display:flex;
 gap:20px;
 }
+.why-title{
+text-align:center;
+font-size:48px;
+margin-bottom:60px;
+}
 
+.why-content{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+}
 .btn-green{
 background:#c6ff00;
 border:none;
@@ -547,6 +597,15 @@ width:32px;
 display:block;
 margin:auto;
 }
+
+.promo-note{
+text-align:center;
+color:#666;
+font-size:14px;
+margin-top:30px;
+margin-bottom:60px;
+}
+
 @media(max-width:1000px){
 .pricing{
 grid-template-columns:1fr;
@@ -555,8 +614,6 @@ padding:40px;
 }
 
 `}</style>
-
-
 
       {/* HERO SECTION */}
       <section className="hero">
@@ -627,7 +684,7 @@ Request a quote
       </section>
 
       {/* CHOOSE HOSTING */}
-      <section section id="choose" className="choose">
+      <section id="choose" className="choose">
 
         <h1><b>Choose the dedicated hosting that fits your workload</b></h1>
 
@@ -687,13 +744,24 @@ Request a quote
           {/* PRICING SECTION */}
 
 <section  id="pricing" className="pricing" >
-
+{activeOS === "linux" && (
+<>
 <div className="card">
 <p className="tag">50% OFF</p>
 <h3>Intel Xeon E-2356G</h3>
 <h2>$87/mo</h2>
 
-<button className="buy">Buy now</button>
+<button
+className="buy"
+onClick={() =>
+window.open(
+"https://www.liquidweb.com/configuration/bare-metal-server/?collection=70965262-3bb9-4dbc-8d42-fc7ec4b95700&config=68&cycle=monthly",
+"_blank"
+)
+}
+>
+Buy now
+</button>
 
 <h4>Resources</h4>
 
@@ -718,14 +786,22 @@ Request a quote
 </ul>
 </div>
 
-
-
 <div className="card">
 <p className="tag">50% OFF</p>
 <h3>Intel Xeon E-2356G+</h3>
 <h2>$106.50/mo</h2>
 
-<button className="buy">Buy now</button>
+<button
+className="buy"
+onClick={() =>
+window.open(
+"https://www.liquidweb.com/configuration/bare-metal-server/?collection=70965262-3bb9-4dbc-8d42-fc7ec4b95700&config=68&cycle=monthly",
+"_blank"
+)
+}
+>
+Buy now
+</button>
 
 <h4>Resources</h4>
 
@@ -755,12 +831,21 @@ Request a quote
 <div className="card popular">
 
 <p className="tag">50% OFF</p>
-<p className="popular-label">MOST POPULAR</p>
 
 <h3>Intel Xeon Gold 6226R</h3>
 <h2>$210/mo</h2>
 
-<button className="buy">Buy now</button>
+<button
+className="buy"
+onClick={() =>
+window.open(
+"https://www.liquidweb.com/configuration/bare-metal-server/?collection=70965262-3bb9-4dbc-8d42-fc7ec4b95700&config=68&cycle=monthly",
+"_blank"
+)
+}
+>
+Buy now
+</button>
 
 <h4>Resources</h4>
 
@@ -788,10 +873,20 @@ Request a quote
 
 <div className="card">
 <p className="tag">50% OFF</p>
-<h3>Dual Intel Xeon Gold 6226R</h3>
+<h3>Intel Xeon Gold 6226R</h3>
 <h2>$266/mo</h2>
 
-<button className="buy">Buy now</button>
+<button
+className="buy"
+onClick={() =>
+window.open(
+"https://www.liquidweb.com/configuration/bare-metal-server/?collection=70965262-3bb9-4dbc-8d42-fc7ec4b95700&config=68&cycle=monthly",
+"_blank"
+)
+}
+>
+Buy now
+</button>
 
 <h4>Resources</h4>
 
@@ -815,8 +910,181 @@ Request a quote
 </ul>
 
 </div>
+</>
+)}
 
+{activeOS === "windows" && (
+<>
+
+<div className="card">
+<p className="tag">50% OFF</p>
+<h3>Intel Xeon E-2134</h3>
+<h2>$62.50/mo</h2>
+
+<button
+className="buy"
+onClick={() =>
+window.open(
+"https://www.liquidweb.com/configuration/bare-metal-server/?collection=70965262-3bb9-4dbc-8d42-fc7ec4b95700&config=68&cycle=monthly",
+"_blank"
+)
+}
+>
+Buy now
+</button>
+
+<h4>Resources</h4>
+
+<ul>
+<li>6 @ 3.2GHz</li>
+<li>32 GB memory</li>
+<li>2x 793 GB SSD</li>
+<li>10 TB bandwidth</li>
+</ul>
+
+<h4>Features</h4>
+
+<ul>
+<li>✔ Self Managed</li>
+<li>✔ Unlimited sites with InterWorx</li>
+<li>✔ Plesk and cPanel available</li>
+<li>✔ DDoS protection</li>
+<li>✔ Remote management tools</li>
+<li>✔ Advanced security</li>
+<li>✔ Root access</li>
+<li>✔ Dedicated IP address</li>
+</ul>
+</div>
+
+<div className="card">
+<p className="tag">50% OFF</p>
+<h3>AMD Ryzen 9 9900X</h3>
+<h2>$119.75/mo</h2>
+
+<button
+className="buy"
+onClick={() =>
+window.open(
+"https://www.liquidweb.com/configuration/bare-metal-server/?collection=70965262-3bb9-4dbc-8d42-fc7ec4b95700&config=68&cycle=monthly",
+"_blank"
+)
+}
+>
+Buy now
+</button>
+
+<h4>Resources</h4>
+
+<ul>
+<li>6 @ 3.2GHz</li>
+<li>32 GB memory</li>
+<li>2x 793 GB SSD</li>
+<li>10 TB bandwidth</li>
+</ul>
+
+<h4>Features</h4>
+
+<ul>
+<li>✔ Self Managed</li>
+<li>✔ Unlimited sites with InterWorx</li>
+<li>✔ Plesk and cPanel available</li>
+<li>✔ DDoS protection</li>
+<li>✔ Remote management tools</li>
+<li>✔ Advanced security</li>
+<li>✔ Root access</li>
+<li>✔ Dedicated IP address</li>
+</ul>
+</div>
+
+<div className="card">
+<p className="tag">50% OFF</p>
+<h3>Intel Xeon E-2456</h3>
+<h2>$125.50/mo</h2>
+
+<button
+className="buy"
+onClick={() =>
+window.open(
+"https://www.liquidweb.com/configuration/bare-metal-server/?collection=70965262-3bb9-4dbc-8d42-fc7ec4b95700&config=68&cycle=monthly",
+"_blank"
+)
+}
+>
+Buy now
+</button>
+
+<h4>Resources</h4>
+
+<ul>
+<li>6 @ 3.2GHz</li>
+<li>32 GB memory</li>
+<li>2x 793 GB SSD</li>
+<li>10 TB bandwidth</li>
+</ul>
+
+<h4>Features</h4>
+
+<ul>
+<li>✔ Self Managed</li>
+<li>✔ Unlimited sites with InterWorx</li>
+<li>✔ Plesk and cPanel available</li>
+<li>✔ DDoS protection</li>
+<li>✔ Remote management tools</li>
+<li>✔ Advanced security</li>
+<li>✔ Root access</li>
+<li>✔ Dedicated IP address</li>
+</ul>
+</div>
+
+<div className="card">
+<p className="tag">15% OFF</p>
+<h3>Intel Xeon Gold 6526Y</h3>
+<h2>$675.75/mo</h2>
+
+<button
+className="buy"
+onClick={() =>
+window.open(
+"https://www.liquidweb.com/configuration/bare-metal-server/?collection=70965262-3bb9-4dbc-8d42-fc7ec4b95700&config=68&cycle=monthly",
+"_blank"
+)
+}
+>
+Buy now
+</button>
+
+<h4>Resources</h4>
+
+<ul>
+<li>6 @ 3.2GHz</li>
+<li>32 GB memory</li>
+<li>2x 793 GB SSD</li>
+<li>10 TB bandwidth</li>
+</ul>
+<h4>Features</h4>
+
+<ul>
+<li>✔ Self Managed</li>
+<li>✔ Unlimited sites with InterWorx</li>
+<li>✔ Plesk and cPanel available</li>
+<li>✔ DDoS protection</li>
+<li>✔ Remote management tools</li>
+<li>✔ Advanced security</li>
+<li>✔ Root access</li>
+<li>✔ Dedicated IP address</li>
+</ul>
+</div>
+
+</>
+)}
 </section>
+
+{/* PROMOTION NOTE */}
+<p className="promo-note">
+*Promotional pricing is available on new products only.
+Introductory pricing expires at the end of the discounted period.
+</p>
+
 {/* FREEDOM SECTION */}
 
 <section className="focus">
@@ -830,15 +1098,19 @@ Request a quote
 <h3>Always-fast performance</h3>
 <p>
 CPU, RAM, and storage that belong to you alone.
-No noisy neighbors or slowdowns.
+ No noisy neighbors or surprise slowdowns. 
+ Your site stays responsive during launches, seasonal peaks, and traffic surges.
 </p>
 </div>
 
 <div className="focus-card">
 <div className="icon-box">👤</div>
 <h3>Expert management options</h3>
+
 <p>
-Security patches, monitoring and troubleshooting handled by experts.
+Security patches, monitoring, performance tuning,
+ OS updates, troubleshooting—we handle the backend 
+ so you stay focused on your work, customers, and growth, not servers.
 </p>
 </div>
 
@@ -846,11 +1118,14 @@ Security patches, monitoring and troubleshooting handled by experts.
 <div className="icon-box">$</div>
 <h3>Predictable pricing</h3>
 <p>
-Send as much traffic as you want. No usage spikes or hidden fees.
+Send as much traffic as you want.
+ Your site stays fast, and your bill stays predictable. 
+ No usage-based spikes or hidden fees. Just high-performance hosting you can count on.
 </p>
 </div>
 </div>
 </section>
+
 <section className="performance"> <h1> Hosting designed for performance<br/> under pressure </h1>
  </section>
 <section className="testimonial-section">
@@ -978,11 +1253,13 @@ where they’re coming from.
 </div>
 
 </section>
+
 <section className="why-section">
 
 <div className="why-left">
 
 <h1>Why host with Liquid Web</h1>
+
 
 <p>
 Your website is too important to slow down, crash, or demand constant
@@ -1033,9 +1310,7 @@ Request a quote
 
 </div>
 
-
 <div className="why-right">
-
 <img
 src="https://images.unsplash.com/photo-1551434678-e076c223a692"
 alt="support"
@@ -1120,4 +1395,4 @@ the right dedicated solution
   );
 }
 
-export default BaremetalHosting; 
+export default BaremetalHosting;
