@@ -55,14 +55,14 @@ export default function Contact() {
       </div>
 
       {/* Google Map */}
-      <div className="w-full h-[400px] mt-10">
-        <iframe
-          title="map"
-          src="https://www.google.com/maps?q=297%20Sector%2030%20Faridabad&output=embed"
-          className="w-full h-full border-0"
-          loading="lazy"
-        ></iframe>
-      </div>
+<div className="w-full h-[400px] mt-10">
+  <iframe
+    title="map"
+    src="https://www.google.com/maps?q=157%20Deputyganj%20Nagram%20Nilmatha%20Rd%20near%20DN%20Motors%20near%20Railway%20crossing%20Roberts%20Lines%20Lucknow%20Uttar%20Pradesh%20226002&output=embed"
+    className="w-full h-full border-0"
+    loading="lazy"
+  ></iframe>
+</div>
 
     </div>
   );
