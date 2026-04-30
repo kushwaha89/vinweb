@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PublicCloud() {
   return (
-    <div className="pt-24">
+    <div className="pt-32">
 
       {/* Page Title */}
       <div className="text-center mb-10">

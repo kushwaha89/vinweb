@@ -10,7 +10,7 @@ export default function Navbar() {
       
   <Link to="/">
   <img 
-    src="/images/vincentio.jpg"
+    src="/cropped-newww.png"
     alt="Vincentio Tech Solutions"
     className="h-20 w-auto"
   />
@@ -123,11 +123,14 @@ export default function Navbar() {
           transition-all duration-300 transform -translate-y-1 group-hover:translate-y-0"
       >
         <Link
-          to="/products/vnetwall"
+          to="/products/server-hardware/rack-servers"
           className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600 transition"
         >
           Rack Servers
         </Link>
+
+        
+
         <Link
       to="/products/baremetal-hosting"
       className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600 transition"
@@ -141,6 +144,9 @@ export default function Navbar() {
     </div>
 
           <Link to="/partners" className="hover:text-blue-600">Partners</Link>
+
+          <Link to="/pricing" className="hover:text-blue-600">Pricing</Link>
+
           <Link to="/about" className="hover:text-blue-600">About Us</Link>
 
           <Link

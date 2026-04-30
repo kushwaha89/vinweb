@@ -2,10 +2,10 @@ import React from "react";
 
 export default function ServicesColocation() {
   return (
-    <div className="bg-white text-gray-900">
+    <div className="bg-white text-gray-900 pt-24">
 
       {/* Hero Section */}
-      <section className="bg-blue-50 py-20">
+      <section className="bg-blue-50 py-20 pt-32">
         <div className="max-w-6xl mx-auto px-6 text-center">
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6">

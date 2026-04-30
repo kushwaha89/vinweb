@@ -12,6 +12,7 @@ import ServicesColocation from "./pages/ServicesColocation";
 import VnetWall from "./pages/VnetWall";
 import VnetMox from "./pages/VnetMox";
 import BaremetalHosting from "./pages/BaremetalHosting";
+import Pricing from "./pages/Pricing";
 import Partners404 from "./pages/Partners404";
 
 // Components
@@ -36,8 +37,9 @@ function App() {
             <Route path="/services/private-cloud" element={<PrivateCloud />} />
             <Route path="/services/colocation" element={<ServicesColocation />} />
             <Route path="/products/vnetwall" element={<VnetWall />} />
-            <Route path="/products/vnetmox" element={<VnetMox />} />
+            <Route path="/products/server-hardware/rack-servers" element={<VnetMox />} />
             <Route path="/products/baremetal-hosting" element={<BaremetalHosting />} />
+            <Route path="/pricing" element={<Pricing />} />
             <Route path="/partners" element={<Partners404 />} />
           </Routes>
         </div>

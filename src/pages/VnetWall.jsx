@@ -38,13 +38,13 @@ const Vnetwall = () => {
     <div className="w-full bg-white">
 
       {/* HERO SECTION */}
-      <section className="pt-20 pb-12 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 text-center">
+      <section className="pt-32 pb-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6  text-center">
 
-          <h1 className="text-4xl md:text-5xl font-light text-gray-800 mb-6">
-            Robust & Open ThinPC Platform
-          </h1>
-
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-light text-gray-800 mb-6 leading-tight 
+            max-w-4xl mx-auto px-4 break-words whitespace-normal">
+                Robust & Open ThinPC Platform
+        </h1>
           <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Flexbox is an open thin PC which can be used as a firewall, thin client, or thin Home PC.
           </p>

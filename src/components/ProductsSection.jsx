@@ -120,7 +120,7 @@ const ProductSection = () => {
 
         {/* SECOND ROW */}
         <div className="mt-20 flex justify-center">
-          <Link to="/products/vnetmox" className="group inline-block text-center">
+          <Link to="/products/server-hardware/rack-servers" className="group inline-block text-center">
             <img
               src="/images/wall.png"
               alt="Rack Servers"
